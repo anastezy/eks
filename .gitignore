@@ -1,0 +1,7 @@
+kubeconfig*
+**/.terraform/*
+*.tfstate
+*.tfstate.*
+.terraformrc
+
+
