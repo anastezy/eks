@@ -1,5 +1,5 @@
 module "main_vpc" {
-  source                   = "git::git@gitlab.favorit:DevOps/terraform/modules.git//networking?ref=master"
+  source                   = "./modules/networking/"
   common_tags              = local.tags
   vpc_network_cidr         = "10.100.0.0/16"
   main_route_table         = "public-rt"

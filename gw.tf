@@ -1,5 +1,5 @@
 module "main_igw" {
-  source       = "git::git@gitlab.favorit:DevOps/terraform/modules.git//gw?ref=master"
+  source       = "./modules/gw"
   common_tags         = local.tags
   igw_vpc_id   = module.main_vpc.vpc_id
   igw_additional_tags = {
